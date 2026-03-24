@@ -1,50 +1,50 @@
-# Welcome to your Expo app 👋
+# Esitya - A Private Space for Two ♡
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Welcome to **Esitya**, a premium, private social application designed exclusively for two people. It combines features of timeline, memory sharing, letters, and snaps into a single, intimate digital experience.
 
-## Get started
+---
 
-1. Install dependencies
+## ✨ Features
 
-   ```bash
-   npm install
-   ```
+-   📖 **The Chronicle**: A shared timeline for all your beautiful memories.
+-   🌌 **The Space**: A private feed for posts, thoughts, and shared media.
+-   🏷️ **The Bucket List**: A place to track your shared dreams and accomplishments.
+-   💌 **Letters**: Slow, deliberate, and eternal messages to each other.
+-   📸 **Snaps**: Quick moments captured and shared in real-time.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🛠️ Architecture
 
-In the output, you'll find options to open the app in a
+This is a **full-stack unified project** built with **Expo Router**.
+-   **Frontend**: React Native, Expo, Lucide Icons, and Reanimated for premium transitions.
+-   **Backend**: Expo Router API routes (`app/api/`) powered by Node.js.
+-   **Database**: MongoDB Atlas (managed via Mongoose).
+-   **Storage**: Cloudinary for images and videos.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🚀 Deployment (Production APK)
 
-## Get a fresh project
+Detailed instructions for production readiness can be found in the [Production Readiness Guide](./production_readiness_guide.md).
 
-When you're ready, run:
+### Quick Build Steps:
+1.  **Host the Backend**: Deploy the project to Vercel (recommended) to make the API routes publicly accessible.
+2.  **Set Environment Variables**: Add your `MONGODB_URI`, `CLOUDINARY_*`, etc., to your hosting provider.
+3.  **Update Client Config**: Set `EXPO_PUBLIC_API_URL` in your build environment to point to your hosted URL.
+4.  **Build**: Use `eas build -p android --profile preview` to generate your APK.
 
-```bash
-npm run reset-project
-```
+---
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 💻 Local Development
 
-## Learn more
+1.  **Clone the Repository**
+2.  **Install Dependencies**: `npm install`
+3.  **Configure Environment**: Create a `.env` file with your credentials (see `.env.example` if available).
+4.  **Start the Server**: `npx expo start`
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## ⚖️ Privacy
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Everything shared in Esitya is encrypted and private, shared only between your account and your partner's account. No one else can access your "Journey."
