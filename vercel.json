@@ -1,5 +1,7 @@
 {
   "version": 2,
+  "outputDirectory": "dist",
+  "buildCommand": "npx expo export --platform web",
   "headers": [
     {
       "source": "/api/(.*)",
