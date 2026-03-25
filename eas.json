@@ -11,6 +11,11 @@
       "distribution": "internal",
       "android": {
         "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://esitya-app.vercel.app/api",
+        "EXPO_PUBLIC_CLOUDINARY_CLOUD_NAME": "dyecde2xc",
+        "EXPO_PUBLIC_CLOUDINARY_UPLOAD_PRESET": "our_journey"
       }
     },
     "production": {}
