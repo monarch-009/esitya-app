@@ -34,9 +34,8 @@ export default function LoveQuotes() {
       <View style={styles.content}>
         <Animated.View
           entering={FadeIn.duration(1000)}
-          style={styles.quoteMark}
         >
-          <Text style={{ fontSize: 84, color: "hsl(345, 60%, 72%)", fontFamily: "CormorantGaramond-Light" }}>"</Text>
+          <Text style={styles.quoteMark}>"</Text>
         </Animated.View>
 
         <View style={styles.quoteContainer}>

@@ -42,3 +42,13 @@ app-example
 # generated native folders
 /ios
 /android
+
+# Vercel (Do NOT ignore vercel.json, it is required for CORS!)
+.vercel/
+
+# Local envs - Ensure these are explicitly ignored!
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

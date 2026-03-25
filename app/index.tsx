@@ -15,6 +15,7 @@ import Animated, {
   SlideInUp,
 } from "react-native-reanimated";
 import { Heart, ArrowRight } from "lucide-react-native";
+import APIStatusMonitor from "../components/APIStatusMonitor";
 
 const { width, height } = Dimensions.get("window");
 
@@ -40,6 +41,7 @@ export default function LandingPage() {
 
   return (
     <View style={styles.container}>
+      <APIStatusMonitor />
       {/* Background gradients simulated */}
       <View
         style={[
